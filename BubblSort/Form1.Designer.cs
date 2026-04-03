@@ -1,4 +1,4 @@
-﻿namespace Task4
+﻿namespace BubblSort
 {
     partial class Form1
     {
@@ -35,16 +35,16 @@
             // listBoxResults
             // 
             listBoxResults.FormattingEnabled = true;
-            listBoxResults.Location = new Point(262, 21);
+            listBoxResults.Location = new Point(171, 27);
             listBoxResults.Name = "listBoxResults";
-            listBoxResults.Size = new Size(532, 464);
+            listBoxResults.Size = new Size(618, 464);
             listBoxResults.TabIndex = 0;
             // 
             // btnSort
             // 
-            btnSort.Location = new Point(71, 52);
+            btnSort.Location = new Point(43, 49);
             btnSort.Name = "btnSort";
-            btnSort.Size = new Size(110, 43);
+            btnSort.Size = new Size(94, 29);
             btnSort.TabIndex = 1;
             btnSort.Text = "Sort";
             btnSort.UseVisualStyleBackColor = true;
@@ -54,7 +54,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(820, 506);
+            BackColor = Color.SeaShell;
+            ClientSize = new Size(829, 505);
             Controls.Add(btnSort);
             Controls.Add(listBoxResults);
             Name = "Form1";
