@@ -34,7 +34,7 @@
             // 
             // btnShowInfo
             // 
-            btnShowInfo.Location = new Point(385, 270);
+            btnShowInfo.Location = new Point(351, 269);
             btnShowInfo.Name = "btnShowInfo";
             btnShowInfo.Size = new Size(75, 23);
             btnShowInfo.TabIndex = 1;
@@ -46,15 +46,16 @@
             // 
             listBoxBooks.FormattingEnabled = true;
             listBoxBooks.ItemHeight = 15;
-            listBoxBooks.Location = new Point(282, 38);
+            listBoxBooks.Location = new Point(24, 38);
             listBoxBooks.Name = "listBoxBooks";
-            listBoxBooks.Size = new Size(282, 214);
+            listBoxBooks.Size = new Size(747, 214);
             listBoxBooks.TabIndex = 2;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(listBoxBooks);
             Controls.Add(btnShowInfo);

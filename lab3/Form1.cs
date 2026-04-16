@@ -40,7 +40,27 @@ namespace lab3
             }
         }
 
-     
+        public class Textbook : Book
+        {
+            public string Subject { get; set; }
+
+            public override string GetInfo()
+            {
+                return $"{Title} by {Author} [{Subject}]";
+            }
+        }
+
+        public class AudioBook: Book
+        {
+            public double Duration { get; set; }
+            public string Narrator { get; set; }
+            public override string GetInfo()
+            {
+                return $"{Title} by {Author} | Narrated by {Narrator} ({Duration} hrs)";
+            }
+        }
+
+
         private void ProcessBooks(Book[] books)
         {
             listBoxBooks.Items.Clear();
@@ -89,6 +109,32 @@ namespace lab3
                     Title = "Design Patterns",
                     Author = "GoF",
                     Format = "EPUB"
+                },
+                new Textbook
+                {
+                    Title = "Introduction to Algorithms",
+                    Author = "Thomas Cormen",
+                    Subject = "Computer Science"
+                },
+                new Textbook
+                {
+                    Title = "Calculus: Early Transcendentals",
+                    Author = "James Stewart",
+                    Subject = "Mathematics"
+                },
+                new AudioBook
+                {
+                    Title = "Atomic Habits",
+                    Author = "James Clear",
+                    Narrator = "James Clear",
+                    Duration = 5.35
+                },
+                new AudioBook
+                {
+                    Title = "The Clean Coder",
+                    Author = "Robert Martin",
+                    Narrator = "Robert Martin",
+                    Duration = 6.5
                 }
             };
 
